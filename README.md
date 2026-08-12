@@ -20,3 +20,4 @@ PostgreSQL data is stored in a Docker named volume for persistence.
 
 ```bash
 docker compose up -d
+# conflict demo from dev
