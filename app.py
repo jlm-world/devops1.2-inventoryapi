@@ -3,16 +3,19 @@
 
 from flask import Flask, jsonify, request
 import psycopg2
-
+import os
 app = Flask(__name__)
 
 
 def get_db_connection():
     return psycopg2.connect(
+
         host="db",
-        database="inventory",
-        user="inventory",
-        password="inventorypass"
+database=os.getenv("POSTGRES_DB"),
+    user=os.getenv("POSTGRES_USER"),
+    password=os.getenv("POSTGRES_PASSWORD")
+
+
     )
 
 

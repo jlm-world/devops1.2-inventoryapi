@@ -1,6 +1,6 @@
 # Project 2 — Containerized Inventory API
 
-A Flask REST API connected to PostgreSQL and containerized with Docker Compose.
+A containerized Flask REST API for managing inventory, backed by PostgreSQL.
 
 ## Tech Stack
 
@@ -9,15 +9,20 @@ A Flask REST API connected to PostgreSQL and containerized with Docker Compose.
 - PostgreSQL 16
 - Docker
 - Docker Compose
+- Git & GitHub
+- Docker Hub
 
 ## Architecture
 
-Client → Flask API → PostgreSQL
-
-PostgreSQL data is stored in a Docker named volume for persistence.
-
-## Run Locally
-
-```bash
-docker compose up -d
-# conflict demo from dev
+```text
+Client
+  |
+  v
+Flask Inventory API
+  |
+  | Docker Network
+  v
+PostgreSQL
+  |
+  v
+Persistent Docker Volume
