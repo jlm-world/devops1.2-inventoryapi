@@ -29,3 +29,4 @@ Persistent Docker Volume
 # Auto-deploy test
 # Test workflow
 # Fix SSH key
+# Final deployment test
