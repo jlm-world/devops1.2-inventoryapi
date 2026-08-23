@@ -1,0 +1,24 @@
+[33m356c050[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Restore docker-compose.yml and .env
+[33meabe695[m Remove K8s and monitoring files (moved to Project 4 repo)
+[33m7c5cfd4[m refactor: extract CI/CD workflows to project 3
+[33m14453c9[m refactor: extract monitoring and observability stack to project 4
+[33m06f8cf7[m chore: add final Nginx Kubernetes manifests and config for monitoring
+[33m073f663[m feat: complete project 4 monitoring with grafana, prometheus, and uptime kuma
+[33m3740bfd[m Add Project 4 screenshots
+[33m79c3684[m Add Kubernetes monitoring stack
+[33me7fa602[m Final deployment test
+[33m5acbfb7[m Update docker-compose commands to docker compose
+[33m51d913a[m Create deploy.yml
+[33medec805[m Fix SSH key
+[33m67a7755[m Test workflow
+[33md0c0ba9[m Merge branch 'main' of https://github.com/jlm-world/project-2-inventory
+[33mee78e5b[m Test auto-deploy
+[33me700f2c[m Add GitHub Actions workflow for EC2 deployment
+[33mcc3b65a[m[33m ([m[1;31morigin/dev[m[33m, [m[1;32mdev[m[33m)[m Finalize Project 2 documentation and configuration
+[33m696b230[m Add dev-side conflict change
+[33m1aafe70[m Merge pull request #1 from jlm-world/feature/inventory-improvements
+[33m8a95be5[m[33m ([m[1;31morigin/feature/inventory-improvements[m[33m, [m[1;32mfeature/inventory-improvements[m[33m)[m Add inventory feature branch change
+[33md528c95[m Add Project 2 documentation
+[33m8f6b0b4[m Merge remote-tracking branch 'origin/main'
+[33m29ee565[m Initial commit
+[33m6526380[m Initial Project 2 inventory API
