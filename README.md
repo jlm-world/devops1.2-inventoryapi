@@ -98,3 +98,4 @@ Link: [https://hub.docker.com/r/mfraj1/inventory-api](https://hub.docker.com/r/m
 ## Project Status
 
 ✅ Complete — runs locally with `docker compose up --build`
+# Trigger workflow
