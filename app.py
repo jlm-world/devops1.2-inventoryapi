@@ -21,7 +21,7 @@ database=os.getenv("POSTGRES_DB"),
 
 @app.route("/")
 def home():
-    return "Inventory API is running!"
+    return "Inventoryapi API is running!"
 
 
 @app.route("/products")
