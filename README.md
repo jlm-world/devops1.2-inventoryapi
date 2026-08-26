@@ -100,3 +100,4 @@ Link: [https://hub.docker.com/r/mfraj1/inventory-api](https://hub.docker.com/r/m
 ✅ Complete — runs locally with `docker compose up --build`
 # Trigger workflow
 # Test auto-deploy
+# Trigger full pipeline test
