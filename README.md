@@ -4,6 +4,10 @@ A containerized REST API for inventory management, built with Flask and PostgreS
 
 ---
 
+## Live API
+
+[https://3.111.37.122:5000/products](https://3.111.37.122:5000/products)
+
 ## Overview
 
 This project demonstrates containerization of a full-stack application using Docker and Docker Compose. It includes a Flask API with full CRUD operations, a PostgreSQL database, persistent storage, and environment-based configuration.
