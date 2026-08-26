@@ -1,6 +1,12 @@
 # Project 2 — Inventory API
 
-A containerized Flask REST API for managing inventory, backed by PostgreSQL.
+A containerized REST API for inventory management, built with Flask and PostgreSQL, running inside Docker containers.
+
+---
+
+## Overview
+
+This project demonstrates containerization of a full-stack application using Docker and Docker Compose. It includes a Flask API with full CRUD operations, a PostgreSQL database, persistent storage, and environment-based configuration.
 
 ---
 
@@ -18,84 +24,56 @@ A containerized Flask REST API for managing inventory, backed by PostgreSQL.
 
 ## Architecture
 
+The application consists of two services:
 
-Client
-|
-v
-Flask Inventory API
-|
-| Docker Network
-v
-PostgreSQL
-|
-v
-Persistent Docker Volume
+- Flask API — handles HTTP requests and business logic
+- PostgreSQL — persistent data storage
 
-text
-
----
-
-## Features
-
-- Full CRUD operations (Create, Read, Update, Delete)
-- Inventory management (products with name, price, quantity)
-- Containerized with Docker
-- Persistent database volume
-- Environment variable configuration
+Both services run in separate containers, connected via a Docker network. Database data is persisted using a named Docker volume.
 
 ---
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/products` | List all products |
-| GET | `/products/<id>` | Get a single product |
-| POST | `/products` | Add a new product |
-| PUT | `/products/<id>` | Update a product |
-| DELETE | `/products/<id>` | Delete a product |
+- GET /products → Retrieve all products
+- GET /products/<id> → Retrieve a single product
+- POST /products → Create a new product
+- PUT /products/<id> → Update an existing product
+- DELETE /products/<id> → Delete a product
 
 ---
 
-## How to Run
+## Setup Instructions
 
-### 1. Clone the repository
+Prerequisites:
+- Docker
+- Docker Compose
 
-```bash
-git clone https://github.com/jlm-world/devops1.2-inventoryapi.git
-cd devops1.2-inventoryapi
-2. Create a .env file
-bash
-POSTGRES_USER=inventory
-POSTGRES_PASSWORD=inventorypass
-POSTGRES_DB=inventory
-3. Build and run with Docker Compose
-bash
-docker compose up --build -d
-4. Test the API
-bash
-curl http://localhost:5000/products
-Docker Hub
+Steps:
+1. Clone the repository:
+   git clone https://github.com/jlm-world/devops1.2-inventoryapi.git
+   cd devops1.2-inventoryapi
+
+2. Create a .env file with:
+   POSTGRES_USER=inventory
+   POSTGRES_PASSWORD=inventorypass
+   POSTGRES_DB=inventory
+
+3. Build and start the containers:
+   docker compose up --build -d
+
+4. Verify the API is running:
+   curl http://localhost:5000/products
+
+---
+
+## Docker Hub
+
 Image: mfraj1/inventory-api:latest
-
-Project Status
-✅ Complete — working locally with docker compose up --build
-
-text
+Link: https://hub.docker.com/r/mfraj1/inventory-api
 
 ---
 
-## Step 5 — Click **"Commit changes"**
+## Project Status
 
-Write a commit message like:
-Update README with clean structure and API docs
-
-text
-
-Click **"Commit directly to the main branch"**
-
----
-
-**Done, Raj.** 😎
-
-
+Complete — runs locally with docker compose up --build
